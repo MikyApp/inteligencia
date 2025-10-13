@@ -1,0 +1,104 @@
+
+I.	Preguntas de completar (5 preguntas)
+1.	Una imagen digital se define como una función f(x,y) donde x e y son las coordenadas espaciales y f(x,y) es la intensidad o nivel de gris en ese punto.
+2.	En el modelo de color RGB, el color blanco se forma con la intensidad máxima (255) en los tres componentes.
+3.	El operador Laplaciano se utiliza para realzar bordes y se basa en la segunda derivada de la imagen.
+4.	La saturación es la propiedad del color que se refiere al grado de pureza de un color respecto al gris.
+5.	El algoritmo de etiquetado de componentes conectados que requiere dos pasadas sobre la imagen y una tabla de equivalencias se conoce como algoritmo dos pasadas.
+
+II.	Selección múltiple (5 preguntas)
+1.	¿Cuál de los siguientes espacios de color separa explícitamente la luminancia de la crominancia?
+a.	RGB
+b.	HSV
+c.	YCbCr ✓
+d.	HSI
+Respuesta: c) YCbCr - Este espacio de color separa explícitamente la luminancia (Y) de las componentes de crominancia (Cb y Cr).
+
+2.	¿Qué tipo de filtro es efectivo para eliminar ruido tipo "sal y pimienta"?
+a.	Filtro media
+b.	Filtro gaussiano
+c.	Filtro mediana ✓
+d.	Filtro de Sobel
+Respuesta: c) Filtro mediana - Es especialmente efectivo para eliminar ruido de tipo impulso como el ruido "sal y pimienta".
+
+3.	¿Qué operación morfológica se utiliza para agrandar los objetos en una imagen binaria?
+a.	Erosión
+b.	Dilatación ✓
+c.	Apertura
+d.	Cierre
+Respuesta: b) Dilatación - Esta operación expande los objetos agregando píxeles en sus bordes.
+
+4.	¿Qué método de segmentación se basa en la detección de cambios abruptos de intensidad?
+a.	Segmentación por umbral
+b.	Transformada de Hough
+c.	Detección de bordes ✓
+d.	Etiquetado de componentes
+Respuesta: c) Detección de bordes - Se basa en identificar cambios significativos en los niveles de intensidad.
+
+5.	¿Cuál de estos NO es un método de extracción de características?
+a.	Segmentación
+b.	Filtrado Gaussiano ✓
+c.	Detección de formas
+d.	Etiquetado
+Respuesta: b) Filtrado Gaussiano - Es una operación de preprocesamiento, no un método de extracción de características.
+
+III.	Correlaciones (5 preguntas)
+Relacione cada concepto con su descripción correspondiente:
+Concepto	Descripción	Respuesta
+Resolución	a) Espacio de color que usa Tono, Saturación y Valor.	b
+HSV	b) Cantidad de píxeles que contiene una imagen.	a
+Filtro de Prewitt	c) Operador de detección de bordes basado en el gradiente.	c
+Transformada de Hough	d) Técnica para detectar líneas y formas geométricas en imágenes.	d
+Algoritmo de pase simple	e) Método de etiquetado usado en streaming de video.	e
+
+Explicación de las correlaciones:
+- Resolución → b: La resolución se refiere a la cantidad de píxeles en una imagen.
+- HSV → a: HSV es el espacio de color que utiliza las componentes de Tono, Saturación y Valor.
+- Filtro de Prewitt → c: Es un operador de detección de bordes que utiliza el gradiente de la imagen.
+- Transformada de Hough → d: Esta transformada se utiliza para detectar formas geométricas como líneas y círculos.
+- Algoritmo de pase simple → e: Es un método optimizado para el procesamiento de video en tiempo real.
+
+IV.	Preguntas abiertas (5 preguntas)
+1.	Explique brevemente la diferencia entre una transformación puntual y una transformación local en el procesamiento de imágenes.
+Respuesta: Una transformación puntual opera sobre cada píxel de manera independiente, donde el nuevo valor depende únicamente del valor original de ese píxel (ejemplo: ajuste de brillo o contraste). En cambio, una transformación local considera el valor del píxel y sus vecinos para determinar el nuevo valor (ejemplo: filtros de convolución, detección de bordes). La transformación local tiene en cuenta el contexto espacial mientras que la puntual no.
+
+2.	Mencione dos ventajas y dos desventajas del espacio de color HSV.
+Respuesta:
+Ventajas:
+- Es más intuitivo para la percepción humana al separar el color (tono y saturación) de la intensidad (valor)
+- Facilita la selección y segmentación de colores en aplicaciones de visión por computadora
+
+Desventajas:
+- La conversión desde RGB requiere cálculos adicionales, lo que puede aumentar el tiempo de procesamiento
+- Presenta inestabilidad numérica cerca del eje acromático (grises), donde pequeños cambios en RGB pueden causar grandes variaciones en el tono
+
+3.	Describa en qué consisten las operaciones morfológicas de erosión y dilatación.
+Respuesta:
+Erosión:
+- Reduce el tamaño de los objetos eliminando píxeles en los bordes
+- Útil para eliminar pequeños detalles y separar objetos conectados
+- Se basa en tomar el valor mínimo en la vecindad definida por el elemento estructurante
+
+Dilatación:
+- Aumenta el tamaño de los objetos agregando píxeles en los bordes
+- Útil para rellenar pequeños agujeros y conectar componentes cercanos
+- Se basa en tomar el valor máximo en la vecindad definida por el elemento estructurante
+
+4.	¿Por qué es importante el dominio de la frecuencia en el procesamiento de imágenes? Mencione un ejemplo de filtro que se aplica en este dominio.
+Respuesta: El dominio de la frecuencia es importante porque:
+- Permite analizar y manipular las características periódicas de la imagen
+- Facilita la aplicación de ciertos filtros de manera más eficiente
+- Permite separar y tratar independientemente las componentes de alta y baja frecuencia
+- Es fundamental para la compresión de imágenes y la reducción de ruido
+
+Ejemplo de filtro: El filtro paso bajo gaussiano, que se aplica multiplicando la transformada de Fourier de la imagen por una función gaussiana, lo que permite eliminar el ruido de alta frecuencia manteniendo las características principales de la imagen.
+
+5.	¿Qué ventajas ofrece el algoritmo de etiquetado de pase simple frente al algoritmo clásico de dos pasadas en sistemas de video en tiempo real?
+Respuesta: El algoritmo de etiquetado de pase simple ofrece las siguientes ventajas:
+- Menor latencia al procesar la imagen en un solo recorrido
+- Menor uso de memoria al no requerir almacenar toda la imagen
+- Más eficiente para procesamiento en tiempo real al reducir el tiempo de procesamiento
+- Ideal para aplicaciones de streaming donde los datos llegan secuencialmente
+- No requiere almacenar una tabla de equivalencias completa
+- Permite comenzar el procesamiento antes de recibir la imagen completa
+

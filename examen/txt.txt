@@ -1,0 +1,4 @@
+Responde las preguntas que estan en el documento.txt,
+las respuestas quiero que esten 
+en el mismo archivo ya existente
+llamado documento.txt y los ejercicios en archivos python.

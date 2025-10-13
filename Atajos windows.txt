@@ -1,0 +1,66 @@
+--> COMANDOS PARA WINDOWS
+
+1. Bloquear sesión
+Win + L
+
+2. Pasar una ventana a otro monitor
+WIN + shif + flecha
+
+3. Ventana de emojis 
+win + .
+
+4. Para navegar por la barra de tarea de windows
+win + T
+
+-->COMANDOS PARA EL EXPLORADOR DE ARCHIVOS
+
+1. Ir a la barra de búsqueda
+CTRL + F
+
+2. Ir a la barra de direcciones
+ALT + D
+
+3. Abrir una nueva ventana de archivos
+CTRL + N
+
+4. Cerrar la ventana de archivos activa
+CTRL + W
+
+5. Abrir el panel de vista previa
+ALT + P
+
+6. Entrar a las propiedades de una carpeta
+ALT + Enter
+
+7. Avanzar y retroceder en un archivo 
+ALT + FLECHAS
+
+8. Maximizar la pantalla activa 
+F11
+
+--> ATAJOS DE NAVEGADOR
+
+1. Vamos a la siguiente pestaña del navegador
+CTRL + TAB
+
+2. Para volver a la anterior pestaña del navegador
+CTRL + SHIF + TAB 
+
+3. Cerrar la pestaña donde nos encontramos
+CTRL + W
+
+4. Cerrar todas las pestañas del navegador
+CTRL + SHIF + W
+
+--ATAJOS PARA YOUTUBE
+JKL
+
+
+Nombre de usuario: Mike
+Nombre de maquina: MIK
+
+Para conectarnos a la carpeta:
+WIN + R
+Ponemos nombre de la maquina: \\MIK
+
+https://github.com/CodigoMaquina/code

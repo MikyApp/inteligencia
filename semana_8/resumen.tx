@@ -1,0 +1,23 @@
+Creación y pérdida de datos: Se generan enormes cantidades de datos diariamente, pero la pérdida suele ocurrir por errores humanos. En entornos distribuidos y en la nube, los departamentos de TI tienen limitada visibilidad y capacidad de gestión de estas pérdidas.
+
+Clasificación de datos: Es un proceso para identificar y categorizar los datos según su sensibilidad, facilitando su protección y cumplimiento de normativas (como HIPAA, RGPD, FERPA). Definir niveles de sensibilidad permite aplicar controles de acceso y protección adecuados.
+
+Tipos de sensibilidad:
+
+Alta: Datos críticos que deben protegerse con controles estrictos (ejemplo: números de tarjetas de crédito, datos médicos).
+
+Media: Información interna y delicada que requiere acceso restringido, pero menor que la alta.
+
+Baja: Información pública que no requiere gran protección (ejemplo: material de marketing).
+
+Procesos y técnicas para clasificación: Incluyen evaluación de riesgos, establecimiento de políticas, categorización, localización de datos, implementación de controles y monitoreo constante. Se resalta la importancia de la revisión humana combinada con automatización e inteligencia artificial para clasificar y proteger datos.
+
+Ejemplos de esquemas de clasificación: Se presentan esquemas de diferentes entidades, como el gobierno de EE.UU., UW-Madison, Harvard y AWS, que muestran diferentes niveles desde públicos hasta altamente restringidos.
+
+Uso de IA: La inteligencia artificial ayuda a acelerar y mejorar la precisión en la clasificación automática de datos, mediante aprendizaje activo y modelos que se ajustan con revisión humana.
+
+Buenas prácticas: Identificación completa de datos sensibles, definición clara de categorías y permisos, capacitación al personal, cumplimiento normativo y uso de IA para mejorar eficiencia.
+
+Además, el documento incluye ejemplos y fragmentos de código Python para procesamiento básico de datos, tales como concatenación de archivos, manipulación de listas y ordenamiento, así como algunas técnicas para limpiar datos y eliminar duplicados en conjuntos de datos, destacando el uso de bibliotecas científicas y de ciencia de datos en Python.
+
+Este resumen recoge la esencia del documento, que es una guía integral para la clasificación de datos y su gestión segura en organizaciones contemporáneas, incluyendo aspectos técnicos y normativos.​
