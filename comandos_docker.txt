@@ -1,0 +1,14 @@
+#Instalar docker desktop
+ Busca en google e instalas
+
+#Ver la versión de docker
+ docker --version
+
+#Ver los procesos que hay o dockers que se estan ejecutando
+ docker ps
+
+#Lanzar el contenedor instalado
+ docker run -it nombre_contenedor (kalilinux/kali-rolling)
+
+#Entrar a un commit 
+ docker run -it nombre_commit(docker run -it kali-linux-install-vim)
