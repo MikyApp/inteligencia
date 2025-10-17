@@ -1,0 +1,23 @@
+#Agregar al PATH unrar y rar
+- nano o vim  ~/.bashrc
+- dentro de  ~/.bashrc pegas la dirección ambos UnRAR, rar.exe
+- guardas el el el archivo ~/.bashrc
+- source ~/.bashrc recargamos para que surtan efecto
+- unrar o rar para probar si, si funciona te da un listado.
+
+#Descomprimir un archivo.rar
+ unrar x nombre_archivo.rar
+
+#Descomprimir archivos sin las carpetas originales
+ unrar e nombre_archivo.rar
+
+#Para listar el contenido sin extraer
+ unrar l nombre_archivo.rar
+
+#Comprimir una carpeta
+ rar a nombre_que_desees.rar nombre_carpeta_a_comprimir
+
+#Comprimir con contraseña
+ rar a -pCONTRASENA nombre_que_deseas.rar nombre_carpeta_a_comprimir
+ Donde: CONTRASENA es la contraseña que quieras asignar
+
