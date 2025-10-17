@@ -8,7 +8,12 @@
  docker ps
 
 #Lanzar el contenedor instalado
- docker run -it nombre_contenedor (kalilinux/kali-rolling)
+ docker run -it nombre_contenedor(kalilinux/kali-rolling)
 
 #Entrar a un commit 
- docker run -it nombre_commit(docker run -it kali-linux-install-vim)
+ docker run -it nombre_commit(kali-linux-install-vim)
+
+#Realizar un commit
+ docker commit id_SO nombre_commit
+ ejemplo: docker commit e2625f76de71 kali-linux-install-code
+ 
