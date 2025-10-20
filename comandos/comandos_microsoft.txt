@@ -1,0 +1,24 @@
+#Para abrir los archivos de microsoft
+ start excel, winword, notepad, visio, etc.
+
+#Abrir archivos word desde terminal 
+ start winword "Nombre_archivo.docx"
+
+#Abrir archivos excel desde terminal
+ start excel "Nombre_archivo.xlsx"
+
+#Abrir archivos PowerPoint desde terminal
+ start powerpnt "nombre_archivo.pptx"
+
+#Abrir archivos Project Document
+ start winproj "nombre_archivo.mpp"
+
+#Abrir archivos Publisher Document
+ start mspub "nombre_archivo.pub"
+
+#Abrir archivos Visio Drawing
+ start visio "nombre_archivo.vsdx"
+
+#Abrir Text Document
+ start notepad "nombre_archivo.txt"
+
