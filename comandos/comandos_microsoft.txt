@@ -22,3 +22,8 @@
 #Abrir Text Document
  start notepad "nombre_archivo.txt"
 
+#Abrir un archivos pdfs
+ start "" "nombre_archivo.pdf"
+
+#Abrir fotos desde terminal 
+ start "" "nombre_foto.extension"
