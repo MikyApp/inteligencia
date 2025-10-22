@@ -1,0 +1,30 @@
+#Instalar CUDA Toolkit
+ https://developer.nvidia.com/cuda-downloads
+
+#Ver la versión de CUDA
+ nvcc -V
+
+#Comprobar que tu GPU reconocida con CUDA
+ nvidia-smi
+
+#DESINTALAR LA VERSION ACTUAL DE TORCH
+ pip uninstall torch torchvision torchaudio
+
+#Instalar la versión CUDA compatible con tu CUDA Toolkit
+ https://pytorch.org/get-started/locally/
+ --> Copias el Run this Command
+
+-------------------------------------------------------------------------------------
+#INSTALACIÓN DE LIBRERÍAS
+
+#Instalación (opencv-python, numpy, matplotlib, tqdm)
+ pip install opencv-python numpy matplotlib tqdm
+
+#Instalar Tensorflow
+ pip install tensorflow
+
+#Instalar YOLO(ultralytics)
+ pip install ultralytics
+
+
+
