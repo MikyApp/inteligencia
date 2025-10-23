@@ -3,7 +3,7 @@ import cv2
 import os
 
 if __name__=="__main__":
-    model = YOLO('best.pt')
+    model = YOLO('yolo11n.pt')
     video = ''
     ulr = "http://192.168.137.55:4747/video"
 

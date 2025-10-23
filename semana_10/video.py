@@ -1,7 +1,13 @@
 from ultralytics import YOLO
 import cv2
+import serial
+import time
 
-model = YOLO("bestnano.pt")
+ser = serial.Serial('COM3', 9600, timeout=1)
+time.sleep(2)
+
+
+model = YOLO("best.pt")
 url = 'http://192.168.5.221:4747/video'
 cap = cv2.VideoCapture(url)
 
@@ -21,12 +27,12 @@ while True:
         # Acción para clase específica, por ejemplo "clase_1"
         if class_name == "abiertos" and confidence > 0.4:
             # Aquí pones el código que quieras ejecutar
-            print(f"Detectado ojos abiertos")
+            ser.write(b'P')
 
         # Acción para clase específica, por ejemplo "clase_1"
         if class_name == "cerrados" and confidence > 0.4:
             # Aquí pones el código que quieras ejecutar
-            print(f"Detectado ojos cerrados")
+            ser.write(b'N')
         
         # Acción para clase específica, por ejemplo "clase_1"
         if class_name == "bostezo" and confidence > 0.4:
@@ -40,3 +46,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+ser.close()
