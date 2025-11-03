@@ -9,7 +9,7 @@ with mp_face_mesh.FaceMesh(
     max_num_faces = 6,
     min_detection_confidence = 0.1
 ) as face_mesh:
-    img = cv2.imread('varios.webp')
+    img = cv2.imread('varios_rostros.webp')
     
     alto, ancho = img.shape[:2]
     img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)

@@ -1,6 +1,6 @@
 from ultralytics import YOLO
 import cv2 
-import os
+#import os
 
 if __name__=="__main__":
     model = YOLO('yolo11n.pt')

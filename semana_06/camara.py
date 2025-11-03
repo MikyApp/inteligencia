@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 fbgd = cv2.createBackgroundSubtractorMOG2()  # RESTADOR DE FONDO CON IMAGEN
-cap = cv2.VideoCapture('porf.mp4') #http://192.168.137.238:4747/video
+cap = cv2.VideoCapture('video.mp4') #http://192.168.137.238:4747/video
 punto1 = [0, 600]
 punto2 = [0, 0]
 punto3 = [800, 0]

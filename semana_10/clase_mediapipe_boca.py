@@ -10,6 +10,7 @@ with mp_face_mesh.FaceMesh(
     max_num_faces=1,
     min_detection_confidence=0.5
 ) as face_mech:
+    
     while True:
         ret, frame =cap.read()
         if ret == False:
@@ -30,6 +31,7 @@ with mp_face_mesh.FaceMesh(
                 x2=int(punto159.x * ancho)
                 y2=int(punto159.y * alto)
                 cv2.line(frame, (x1,y1), (x2,y2), (0,255,0), 3)
+                
                 fuente=cv2.FONT_HERSHEY_SIMPLEX
 
                 if(y1-y2)<10:
