@@ -1,0 +1,32 @@
+# 1. Ir a la carpeta de .SSH
+  cd ~/.ssh
+
+# 2. Ver si hay llaves configuradas
+  ls -lrta
+
+# 3. Crear la llave ssh
+  ssh-keygen -t ed25519 -C "example@gmail.com GitHub" -f id_ed25519
+ 
+# 4. Configurar para windows en shell (administrador)
+# 5. Nos dirigimos a la carpeta donde queremos que ejecute nuestro repositorio
+# 6. Ejecutamos de forma manual
+  Get-Service -Name ssh-agent | Set-Service -StartupType Manual
+
+# 7. Inicializar el agente
+  ssh-agent start
+
+# 8. Agregar nuestra llave ssh a nuestro agente
+  ssh-add.exe C:\Users\Mike\.ssh\id_ed25519 (Pide contraseña)
+
+# 9. Ver la llave publica en gitbash
+  cat id_ed25519.pub
+
+# 10. Copiar la llave publica y pegar en github
+  - Nos vamos a nuestro perfil
+  - Ajustes
+  - SSH and GPG keys
+  - Agregar new
+
+#Fuente
+https://github.com/san99tiago/devops-tools/blob/main/SSH_KEYS_WINDOWS.md
+
