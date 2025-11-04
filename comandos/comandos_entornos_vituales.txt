@@ -1,0 +1,20 @@
+#Instalar vitualenv (entorno virtual)
+ pip install vitualenv
+
+#Ver los modulos instalados
+ pip freeze
+
+#Crear un entorno vitual de python 
+#(Nos dirigimos a la carpeta donde queremos crear el entorno vitual)
+ virtualenv nombre_entorno (powershell)
+
+ python -m venv nombre_entorno (gitbash)
+
+
+#Activar el entorno virtual
+ .\nombre_entorno\Scripts\activate (Shell)
+
+ source nombre_entorno/Scripts/activate (gitbash)
+
+#Desactivar los entornos virtuales
+ deactivate
