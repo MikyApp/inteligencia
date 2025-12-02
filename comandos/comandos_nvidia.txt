@@ -1,5 +1,6 @@
 #Instalar CUDA Toolkit
- https://developer.nvidia.com/cuda-downloads
+Usa CUDA 12.6 
+https://developer.nvidia.com/cuda-downloads
 
 #Ver la versión de CUDA
  nvcc -V
